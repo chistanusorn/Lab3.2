@@ -5,10 +5,17 @@
         <div class="col">
           <div class="text-h3 text-weight-bold text-primary">Win Win Winku</div>
           <div class="text-subtitle1 text-grey-7">Fullstack Lab: Express + Prisma + Supabase +CICD</div>
-          <div v-if="studentInfo" class="q-mt-md text-grey-8">
-            <div><strong>Student:</strong> {{ studentInfo.name }}</div>
-            <div><strong>Code:</strong> {{ studentInfo.code }}</div>
-            <div class="text-italic q-mt-xs">"{{ studentInfo.motto }}"</div>
+          <div v-if="studentInfo" class="q-mt-lg">
+            <q-card flat bordered class="task-card">
+              <q-card-section>
+                <div class="text-h6 text-weight-bold text-primary">{{ studentInfo.name }}</div>
+                <div class="text-body2 text-grey-8">Code: {{ studentInfo.code }}</div>
+              </q-card-section>
+              <q-separator />
+              <q-card-section class="bg-grey-2 text-grey-7">
+                <div class="text-italic">"{{ studentInfo.motto }}"</div>
+              </q-card-section>
+            </q-card>
           </div>
         </div>
         <div class="col-auto">
