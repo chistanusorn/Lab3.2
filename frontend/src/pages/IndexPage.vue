@@ -5,6 +5,11 @@
         <div class="col">
           <div class="text-h3 text-weight-bold text-primary">Win Win Winku</div>
           <div class="text-subtitle1 text-grey-7">Fullstack Lab: Express + Prisma + Supabase +CICD</div>
+          <div v-if="studentInfo" class="q-mt-md text-grey-8">
+            <div><strong>Student:</strong> {{ studentInfo.name }}</div>
+            <div><strong>Code:</strong> {{ studentInfo.code }}</div>
+            <div class="text-italic q-mt-xs">"{{ studentInfo.motto }}"</div>
+          </div>
         </div>
         <div class="col-auto">
           <q-btn
@@ -109,6 +114,16 @@ const fetchTasks = async () => {
   }
 };
 
+const studentInfo = ref(null);
+const fetchStudentInfo = async () => {
+    try {
+        const res = await api.get('/student');
+        studentInfo.value = res.data;
+    } catch (err) {
+        console.error('Failed to fetch student info:', err);
+    }
+};
+
 const formatDate = (dateStr) => {
   return new Date(dateStr).toLocaleString('th-TH', {
     year: 'numeric',
@@ -120,5 +135,8 @@ const formatDate = (dateStr) => {
   });
 };
 
-onMounted(fetchTasks);
+onMounted(() => {
+    fetchTasks();
+    fetchStudentInfo();
+});
 </script>

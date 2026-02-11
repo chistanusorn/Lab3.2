@@ -52,6 +52,15 @@ app.get('/', (_req, res) => {
   });
 });
 
+// Student Info API
+app.get('/api/student', (req, res) => {
+  res.json({
+    name: 'นายคริสตนุสรณ์ มหาวีระตระกูล',
+    code: '6604101311',
+    motto: 'Every line is a responsibility, every work is an honor',
+  });
+});
+
 // Task API (Lab 2.1)
 app.use('/api/tasks', taskRoutes);
 
