@@ -1,1 +1,2 @@
-ทำการสร้าง frontend สำหรับ App
+Upadte 5/3/69 
+-FinalExam Full stack devop 
