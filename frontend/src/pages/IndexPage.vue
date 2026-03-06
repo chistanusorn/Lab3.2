@@ -10,11 +10,11 @@
               <q-card-section>
                 <div class="text-h6 text-weight-bold text-primary">{{ studentInfo.name }}</div>
                 <div class="text-body2 text-grey-8">Code: {{ studentInfo.code }}</div>
+                <div class="text-caption text-grey-6 q-mt-xs">{{ studentInfo.date }}</div>
               </q-card-section>
               <q-separator />
               <q-card-section class="bg-grey-2 text-grey-7">
                 <div class="text-italic">"{{ studentInfo.motto }}"</div>
-                <div class="text-caption q-mt-sm">{{ studentInfo.date }}</div>
               </q-card-section>
             </q-card>
           </div>
