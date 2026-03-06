@@ -58,6 +58,7 @@ app.get('/api/student', (req, res) => {
     name: 'นายคริสตนุสรณ์ มหาวีระตระกูล',
     code: '6604101311',
     motto: 'Every line is a responsibility, every work is an honor',
+    date: 'วันศุกร์ ที่ 6 มีนาคม 2569',
   });
 });
 

@@ -1,0 +1,12 @@
+{
+    "student_id": "6604101311",
+    "name": "คริสตนุสรณ์ มหาวีระตระกูล",
+    "github_repo": "https://github.com/chistanusorn/Lab3.2",
+    "backend_base_url": "https://finalexam-utmb.onrender.com",
+    "frontend_url": "https://finaleaxm.netlify.app/#/",
+    "api": {
+        "health": "https://finalexam-utmb.onrender.com/",
+        "tasks": "https://finalexam-utmb.onrender.com/api/tasks",
+        "student": "https://finalexam-utmb.onrender.com/api/student"
+    }
+}

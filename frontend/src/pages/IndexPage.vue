@@ -14,6 +14,7 @@
               <q-separator />
               <q-card-section class="bg-grey-2 text-grey-7">
                 <div class="text-italic">"{{ studentInfo.motto }}"</div>
+                <div class="text-caption q-mt-sm">{{ studentInfo.date }}</div>
               </q-card-section>
             </q-card>
           </div>
