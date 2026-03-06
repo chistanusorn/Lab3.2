@@ -52,6 +52,11 @@ app.get('/', (_req, res) => {
   });
 });
 
+// health check API
+app.get('/api/health', (_req, res) => {
+  res.json({ ok: true });
+});
+
 // Student Info API
 app.get('/api/student', (req, res) => {
   res.json({

@@ -6,7 +6,7 @@
     "backend_base_url": "https://finalexam-utmb.onrender.com",
     "frontend_url": "https://finalexamkub.netlify.app/#/",
     "api": {
-        "health": "https://finalexam-utmb.onrender.com/",
+        "health": "https://finalexam-utmb.onrender.com/api/health",
         "tasks": "https://finalexam-utmb.onrender.com/api/tasks",
         "student": "https://finalexam-utmb.onrender.com/api/student"
     }
